@@ -13,3 +13,7 @@ def view_T_course(request):
 
 def student(request):
     return render(request, 'lms/student.html')
+
+
+def login(request):
+    return render(request, 'lms/login.html')

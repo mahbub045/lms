@@ -1,0 +1,14 @@
+.bg{
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-position: center;
+}
+.custom_bg{
+	background-color: #0d9fadd6;
+	margin-top: 150px !important;
+	margin-bottom: 150px;
+	padding: 15px;
+	border-radius: 10px;
+}
