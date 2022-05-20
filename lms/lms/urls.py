@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.teacher),
+    path('', views.adminpage),
+    path('teacher/', views.teacher),
+    path('student/', views.student),
 ]
