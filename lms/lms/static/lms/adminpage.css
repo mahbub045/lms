@@ -1,3 +1,134 @@
-h1{
-	color:blue;
+/*header Start*/
+header{
+	background-color: #0d9fad;
 }
+.l_img{
+	width: 100px;
+}
+.c_form{
+	height: 30px;
+    width: 150px !important;
+    border-radius: 20px !important;
+}
+.c_btn{
+	color: #ffff !important;
+	height: 30px;
+	padding: 0px 15px 0px 15px !important;
+    border-radius: 20px !important;
+}
+.c_btn:hover{
+	color: #FD6120 !important;
+	background-color: #16B6C5 !important;
+}
+.menu ul li a{
+	font-size: 14px;
+	color: #fff !important;
+	padding: 0 20px !important;
+	transition: 0.5s;
+}
+.menu ul li a:hover{
+	color: #FD6120 !important;
+}
+/*header end*/
+/*banner start*/
+#bg{
+	/*background-size: 1800px 900px;*/
+    background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-position: center;
+}
+.banner{
+	padding-top: 200px;
+	padding-bottom: 100px;
+	margin-top: 65px;
+}
+.banner h1{
+	font-weight: 500;
+	font-size: 25px;
+	color: #0cb959;
+}
+.banner h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 70px;
+	color: #ffbf09;
+}
+.btn-custom{
+	background-color: #FD6120 !important;
+	color: #fff !important;
+	border-color: #fea71a;
+	margin: 20px 10px 20px 10px;
+	border-radius: 20px !important;
+	transition: .5s;
+}
+.btn-custom:hover{
+	background-color: #DE3F18 !important;
+}
+.btn-custom:last-child{
+	padding-left: 22px;
+	padding-right: 22px;
+}
+/*banner end*/
+/*teacher, student & course name start*/
+.table_bg_color{
+	background-color: #b3eff5;
+	
+}
+.c_padding{
+	padding: 50px 0 50px 0px;
+}
+/*teacher, student & course name end*/
+/*footer start*/
+footer{
+	background-color: #0D9FAD;
+	padding-top: 30px;
+}
+.lms{
+}
+.lms h3{
+	font-weight: 700;
+	font-size: 18px;
+	color: #ffffff;
+}
+.lms h3 span{
+	color: #3f488d;
+	font-size: 35px;
+}
+.lms p{
+	font-weight: 300;
+	font-size: 14px;
+	color: #ffffff;
+}
+.f_contact ul li a{
+	font-weight: 300;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: 1s;
+}
+.f_contact ul li a:hover{
+	color: #fea71a;
+}
+.designed{
+	background-color: #16B6C5;
+	padding: 20px 0 5px 0px;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.designed h2{
+	font-weight: 300;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+}
+.designed h2 a{
+	color: #7df7c4;
+	text-decoration: none;
+	transition: 1s;
+}
+.designed h2 a:hover{
+	color: #DE3F18;
+}
+/*footer end*/

@@ -10,7 +10,137 @@
 	<title>Learning Management System</title>
 </head>
 <body>
-	<h1>This is my frist project</h1>
-	
+	<!-- header start -->
+	<header class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img class="img-fluid l_img" src="{% static 'images/logo.png' %}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+						<form class="d-flex" role="search">
+							<input class="form-control me-2 c_form" type="search" placeholder="Search course" aria-label="Search">
+							<button class="btn btn-outline-success c_btn" type="submit">Search</button>
+						</form>
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">All courses</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li>
+								<a class="nav-link active" href="#">Teacher</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- banner start -->
+	<section class="banner" id="bg" style="background-image: url('{% static "images/bannarimg.jpg" %}')";>
+		<div class="container" >
+			<!-- 1st row start -->
+			<div class="row" id="">
+				<div class="offset-md-2 col-md-9 pb-0 text-center">
+					<h1>Quest For Excellence</h1>
+					<h2>Learning Management System</h2> 
+					<a href="#prevention"><button id="" class="btn btn-custom" type="submit">Find Teacher</button></a>
+					<a href="#experts"><button id="" class="btn btn-custom" type="submit">Find Course</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- banner end -->
+	<!-- my course list start -->
+	<section style="background-color: #b3eff5;">
+		<div class="container c_padding ">
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<h1>My Course overview</h1>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-sm-6">
+					<div class="card" style="border-radius: 20px;">
+						<div class="card-body">
+							<h5 class="card-title">Dept. of CSE</h5>
+							<p class="card-text">Spring 221 CSE 4165/CSE 465 (A) : Web Programming</p>
+							<a href="/view_T_course/" class="btn btn-custom">Go</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card" style="border-radius: 20px;">
+						<div class="card-body">
+							<h5 class="card-title">Dept. of CSE</h5>
+							<p class="card-text">Spring 221 CSE 429/CSE 4329 (B) : Digital System Design</p>
+							<a href="/view_T_course/" class="btn btn-custom">Go</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- my course list end -->
+
+	<!-- footer start -->
+	<footer>
+		<footer>
+			<div class="container">
+				<div class="row" style="padding-bottom: 50px;">
+
+					<div class="col-lg-3 col-sm-12 col-12 lms">
+						<h3><span>Learning </span>Management System</h3>
+						<p>We invite you to explore our innovative and interactive Global Online Learning Experience.</p>
+					</div>
+					<div class="offset-1 col-md-2 f_contact">
+						<ul class="list-unstyled">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#">Student Portal</a></li>
+							<li><a href="#">Parent Portal</a></li>
+							<li><a href="#">Faculty Members</a></li>
+						</ul>
+					</div>
+
+					<div class="offset-md-1 col-md-3 offset-md-1 col-4 f_contact">
+						<ul class="list-unstyled">
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Admission Test Result</a></li>
+							<li><a href="#">Admission (Apply Online)</a></li>
+							<li><a href="#">Degree Verification</a></li>
+							<li><a href="#">Online Classroom Booking</a></li>
+						</ul>
+					</div>
+
+					<div class="offset-md-0 col-md-2  f_contact">
+						<ul class="list-unstyled">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Youtube</a></li>
+							<li><a href="#">Linked In</a></li>
+							<li><a href="#">Instagram</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="row designed">
+					<div class="col-12">
+						<h2>Designed by <a href="#" target="_blank">Unknown software Team</a></h2>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+		
+	</footer>
+	<!-- footer end -->
+
 </body>
 </html>

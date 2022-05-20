@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'lms/adminpage.css' %}">
+	<link rel="stylesheet" href="{% static 'lms/view_T_course.css' %}">
 	<link rel="stylesheet" href="{% static 'lms/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 	<title>Learning Management System</title>
 </head>
@@ -33,10 +34,7 @@
 						</ul>
 						<ul class="navbar-nav">
 							<li>
-								<a class="nav-link active" href="#">ADMIN</a>
-							</li>
-							<li>
-								<!-- <a class="nav-link active" href="/teacher/">TEacher</a> -->
+								<a class="nav-link active" href="/teacher/">Teacher</a>
 							</li>
 						</ul>
 					</div>
@@ -45,67 +43,47 @@
 		</div>
 	</header>
 	<!-- header end -->
-	<!-- banner start -->
-	<section class="banner" id="bg" style="background-image: url('{% static "images/bannarimg.jpg"%}')";>
-		<div class="container" >
-			<!-- 1st row start -->
-			<div class="row" id="">
-				<div class="offset-md-2 col-md-9 pb-0 text-center">
-					<h1>Quest For Excellence</h1>
-					<h2>Learning Management System</h2> 
-					<a href="#prevention"><button id="" class="btn btn-custom" type="submit">Find Teacher</button></a>
-					<a href="#experts"><button id="" class="btn btn-custom" type="submit">Find Course</button></a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- banner end -->
-	<!-- teacher, student & course name start -->
-	<section class="table_bg_color">
-		<div class="container c_padding">
+	<!-- course Name start -->
+	<section class="courseName">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-12 text-center">
-					<h1>Teacher, Student & Course Name</h1>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body col-md-9">
+							<h2>Course Name</h2>
+							<h5 class="card-title">Spring 221 CSE 4165/CSE 465 (A) : Web Programming</h5>
+							<a href="/teacher/" class="btn back_btn"><i class="fa-solid fa-angle-left"></i> Back</a>
+
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row ">
+			<div class="row mt-3">
 				<div class="col-md-12">
-					<table class="table table-bordered border-dark caption-top">
-						<caption>List of users</caption>
-						<thead>
-							<tr>
-								<th scope="col">Number</th>
-								<th scope="col">Teacher Name</th>
-								<th scope="col">Student Name</th>
-								<th scope="col">Course Name</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Jaime Escalante</td>
-								<td>Benjamin James Adams</td>
-								<td>Data Structure</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Dr. Larabee</td>
-								<td>John William Miller</td>
-								<td>System Analysis & Design</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td> Elizabeth Halsey</td>
-								<td>Samita Thapa</td>
-								<td>Artificial Intelligence</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="card">
+						<div class="card-body col-md-12 text-center">
+							<h2 class="card-title ">Notice</h2>
+							<p class="card-text">Students are encouraged to wear formal attire, but this is not mandatory.</p>
+						</div>
 				</div>
 			</div>
 		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<h5>Add Assignment</h5>
+				<div class="mb-3">
+					<input class="mb-2 form-control" type="text" placeholder="Add comment">
+					<input class="" type="file" id="formFile">
+					<div>
+						<a href=""><button class="btn btn-custom" type="submit">Submit</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
 	</section>
-	<!-- teacher, student & course name end -->
+	<!-- course Name end -->
 	<!-- footer start -->
 	<footer>
 		<footer>
@@ -128,7 +106,7 @@
 
 					<div class="offset-md-1 col-md-3 offset-md-1 col-4 f_contact">
 						<ul class="list-unstyled">
-							<li><a href="#">Faq</a></li>
+							<li><a href="#">FAQ</a></li>
 							<li><a href="#">Admission Test Result</a></li>
 							<li><a href="#">Admission (Apply Online)</a></li>
 							<li><a href="#">Degree Verification</a></li>

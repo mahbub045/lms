@@ -30,52 +30,37 @@ header{
 	color: #FD6120 !important;
 }
 /*header end*/
-/*banner start*/
-#bg{
-	/*background-size: 1800px 900px;*/
-    background-repeat: no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	background-position: center;
-}
-.banner{
-	padding-top: 200px;
-	padding-bottom: 100px;
+/*courseName sart*/
+.courseName{
+	background-color: #b3eff5;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin-top: 65px;
 }
-.banner h1{
-	font-weight: 500;
-	font-size: 25px;
-	color: #0cb959;
+.back_btn{
+	background-color: #277683 !important;
+	color: #ffff !important;
+	height: 30px;
+	padding: 1px 15px 0px 15px !important;
+    border-radius: 20px !important;
+
 }
-.banner h2{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 70px;
-	color: #ffbf09;
+.back_btn:hover{
+	/*color: #FD6120 !important;*/
+	background-color: #16B6C5 !important;
 }
 .btn-custom{
-	background-color: #FD6120 !important;
-	color: #fff !important;
-	border-color: #FD6120 !important;
-	margin: 20px 10px 20px 10px;
-	border-radius: 20px !important;
-	transition: .5s;
+	background-color: #0d9fad !important;
+    color: #fff !important;
+    border-color: #0d9fad !important;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px !important;
+    transition: .5s;
 }
 .btn-custom:hover{
-	background-color: #DE3F18 !important;
+	background-color: #07535a  !important;
 }
-.btn-custom:last-child{
-	padding-left: 22px;
-	padding-right: 22px;
-}
-/*banner end*/
-/*my course list start*/
-.c_padding{
-	padding: 50px 0 50px 0px;
-}
-/*my course list end*/
+/*courseName end*/
 /*footer start*/
 footer{
 	background-color: #0D9FAD;
