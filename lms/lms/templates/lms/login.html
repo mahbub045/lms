@@ -18,11 +18,12 @@
 					<div class="text-center">
 						<h2 class="text-warning">Learning Management System</h2>
 					</div>
-					<form>
+					<form method="POST" action="{%  url 'login' %}">
+						{% csrf_token %}
 						<div class="mb-3 col-md-8">
-							<label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							<div id="emailHelp" class="form-text text-dark">We'll never share your email with anyone else.</div>
+							<label for="exampleInputEmail1" class="form-label fw-bold">User ID</label>
+							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text text-dark">We'll never share your UserID with anyone else.</div>
 						</div>
 						<div class="mb-3 col-md-6">
 							<label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
@@ -33,11 +34,10 @@
 							<label class="form-check-label fw-bold" for="exampleCheck1">Keep me login</label>
 						</div>
 						<button type="submit" class="btn btn-primary">Log in</button>
-						<div class="mt-2">
+					</form>
+					<div class="mt-2">
 							<a class="text-warning text-decoration-none" href="#">Forgate Password</a>
 						</div>
-						
-					</form>
 				</div>
 				
 				

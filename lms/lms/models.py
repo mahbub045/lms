@@ -11,6 +11,3 @@ class Post(models.Model):
 	#auto_now = True or auto_now_add=True
 	author = models.ForeignKey(User, on_delete=models.CASCADE)
 
-class Comment(models.Model):
-	content = models.TextField()
-	which_post = models.ForeignKey(Post, on_delete=models.CASCADE)
